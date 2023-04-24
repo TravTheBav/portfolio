@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+}
+
+.status_bar {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr 3.5fr;
+}
+
+.door, .left_status_bar, .right_status_bar, .portrait {
+    background: center no-repeat;
+    background-size: 100% 100%;
+}
+
+.door {
+    background-image: url('images/doom_door.png');
+    position: relative;
+    transform: translateY(0px);
+    will-change: transform;
+}
+
+.door.open {
+    transform: translateY(-100%);
+    transition: transform 1.5s ease-in-out;
+}
+
+.left_status_bar {
+    background-image: url('images/left_status_bar.png');
+}
+
+.right_status_bar {
+    background-image: url('images/right_status_bar.png');
+}
+
+.portrait {
+    background-color: black;
+    background-image: url('images/travis_sprite.gif');
+}
+
+button.door_bell {
+    background-color: rgb(192, 28, 28);
+    color: white;
+    font-size: 24px;
+    width: 240px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 120px);
+}
