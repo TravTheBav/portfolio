@@ -1,6 +1,18 @@
-html, body {
+html, body, .page_content {
     margin: 0;
     height: 100%;
+}
+
+body {    
+    position: relative;
+}
+
+body.light {
+    background: 120px/120px repeat url('images/floor_texture.png');
+}
+
+body.dark {
+    background: 120px/120px repeat url('images/dark_floor_texture.png');
 }
 
 .container {
@@ -9,11 +21,25 @@ html, body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 1fr;
+    position: absolute;
+    z-index: 2;
+}
+
+.page_content {
+    z-index: 1;
+    position: relative;
 }
 
 .status_bar {
     display: grid;
     grid-template-columns: 3.5fr 1fr 3.5fr;
+    transform: translateX(0px);
+    will-change: transform;
+}
+
+.status_bar.open {
+    transform: translateX(-100%);
+    transition: transform 1.5s ease-in-out;
 }
 
 .door, .left_status_bar, .right_status_bar, .portrait {
@@ -23,7 +49,6 @@ html, body {
 
 .door {
     background-image: url('images/doom_door.png');
-    position: relative;
     transform: translateY(0px);
     will-change: transform;
 }
@@ -55,4 +80,24 @@ button.door_bell {
     position: absolute;
     top: calc(50% - 50px);
     left: calc(50% - 120px);
+}
+
+.light_switch {
+    width: max-content;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.light_switch img {
+    width: 80px;
+    height: 120px;
+}
+
+.light_switch img.light {
+    content: url('images/switch_on.png');
+}
+
+.light_switch img.dark {
+    content: url('images/switch_off.png');
 }
