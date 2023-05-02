@@ -34,7 +34,6 @@ body.dark {
 
 .page_content {
     z-index: 1;
-    position: relative;
 }
 
 .status_bar {
@@ -95,9 +94,7 @@ button.door_bell {
 
 .light_switch {
     width: max-content;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
+    margin: 16px;
 }
 
 .light_switch img, img.lamp {
@@ -147,7 +144,7 @@ h1.page_title {
     color: white;
 }
 
-.index_categories {
+li.index_menu {
     margin: 100px 0px;
     display: flex;
     flex-direction: column;
@@ -156,7 +153,19 @@ h1.page_title {
     align-items: center;
 }
 
-.index_categories img {
+li.index_menu ul.category:hover img.skull_box {
+    content-visibility: visible;
+}
+
+.category img {
     height: 48px;
     width: 792px;
 }
+
+.category img.skull_box {
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+    content-visibility: hidden;
+}
+
