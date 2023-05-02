@@ -1,3 +1,7 @@
+// preload background image
+let image = new Image();
+image.src = "images/dark_floor_texture.png";
+
 function setupDoorBell() {
     let container = document.querySelector('.container');
     let doorBell = document.querySelector('button.door_bell');
