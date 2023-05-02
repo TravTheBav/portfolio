@@ -34,6 +34,9 @@ body.dark {
 
 .page_content {
     z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
 }
 
 .status_bar {
@@ -97,9 +100,14 @@ button.door_bell {
     margin: 16px;
 }
 
-.light_switch img, img.lamp {
+img.lamp {
     width: 80px;
     height: 120px;
+}
+
+.light_switch img {
+    width: clamp(40px, 5vw, 160px);
+    height: auto;
 }
 
 .light_switch img.light {
@@ -144,8 +152,11 @@ h1.page_title {
     color: white;
 }
 
+.page_middle {
+    padding-top: clamp(30px, 5vh, 60px);
+}
+
 li.index_menu {
-    margin: 100px 0px;
     display: flex;
     flex-direction: column;
     gap: 42px;
@@ -154,18 +165,20 @@ li.index_menu {
 }
 
 li.index_menu ul.category:hover img.skull_box {
-    content-visibility: visible;
+    display: inline;
+}
+
+.category {
+    height: max-content;
 }
 
 .category img {
-    height: 48px;
-    width: 792px;
+    width: clamp(270px, 58vw, 1200px);
 }
 
 .category img.skull_box {
-    height: 48px;
-    width: 48px;
+    width: 3.5vw;
     margin-right: 10px;
-    content-visibility: hidden;
+    display: none;
 }
 
