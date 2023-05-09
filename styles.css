@@ -15,11 +15,11 @@ body {
 }
 
 body.light {
-    background: 120px/120px repeat url('images/floor_texture.png');
+    background: 120px/120px repeat url('images/doom_textures/floor_texture.png');
 }
 
 body.dark {
-    background: 120px/120px repeat url('images/dark_floor_texture.png');
+    background: 120px/120px repeat url('images/doom_textures/dark_floor_texture.png');
 }
 
 .container {
@@ -57,7 +57,7 @@ body.dark {
 }
 
 .door {
-    background-image: url('images/doom_door.png');
+    background-image: url('images/doom_textures/doom_door.png');
     transform: translateY(0px);
     will-change: transform;
 }
@@ -68,11 +68,11 @@ body.dark {
 }
 
 .left_status_bar {
-    background-image: url('images/left_status_bar.png');
+    background-image: url('images/doom_textures/left_status_bar.png');
 }
 
 .right_status_bar {
-    background-image: url('images/right_status_bar.png');
+    background-image: url('images/doom_textures/right_status_bar.png');
 }
 
 .door, .left_status_bar, .right_status_bar, .portrait, .index_categories img {
@@ -81,7 +81,7 @@ body.dark {
 
 .portrait {
     background-color: black;
-    background-image: url('images/travis_sprite.gif');
+    background-image: url('images/doom_gifs/travis_sprite.gif');
 }
 
 button.door_bell {
@@ -111,11 +111,11 @@ img.lamp {
 }
 
 .light_switch img.light {
-    content: url('images/switch_on.png');
+    content: url('images/doom_textures/switch_on.png');
 }
 
 .light_switch img.dark {
-    content: url('images/switch_off.png');
+    content: url('images/doom_textures/switch_off.png');
 }
 
 .header {
@@ -132,6 +132,7 @@ h1.page_title {
     background-clip: text;
     color: transparent;
     -webkit-text-stroke: 2px white;
+    text-align: center;
 }
 
 .nav_bar {
@@ -164,12 +165,10 @@ li.index_menu {
     align-items: center;
 }
 
-li.index_menu ul.category:hover img.skull_box {
-    display: inline;
-}
-
-.category {
+ul.category {
     height: max-content;
+    display: flex;
+    gap: 10px;
 }
 
 .category img {
@@ -178,7 +177,16 @@ li.index_menu ul.category:hover img.skull_box {
 
 .category img.skull_box {
     width: 3.2vw;
-    margin-right: 10px;
-    display: none;
+    opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    li.index_menu img.index_category:hover + img.skull_box {
+        opacity: 1;
+    }
+
+    ul.category img:last-child {
+        order: -1;
+    }
 }
 
