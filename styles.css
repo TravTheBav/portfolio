@@ -7,7 +7,7 @@
 
 html, body, .page_content {
     margin: 0;
-    height: 100%;
+    min-height: 100%;
 }
 
 body {    
@@ -23,8 +23,8 @@ body.dark {
 }
 
 .container {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 1fr;
@@ -135,12 +135,6 @@ h1.page_title {
     text-align: center;
 }
 
-.nav_bar {
-    justify-content: right;
-    gap: 8px;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
 .header, .nav_bar {
     padding: 10px;
     display: flex;
@@ -148,9 +142,37 @@ h1.page_title {
     box-shadow: 0px 6px 5px rgb(25, 25, 25);
 }
 
+.nav_bar {
+    align-items: flex-start;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    position: relative;
+}
+
 .nav_bar * {
     font-size: 24px;
     color: white;
+}
+
+.burger {
+    margin-left: 1rem;
+}
+
+.nav_links * {
+    margin: 1rem 0px 2rem 1rem;
+}
+
+.nav_links {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background-color: #004c70;
+}
+
+.nav_links.collapsed {
+    display: none;
 }
 
 .page_middle {
@@ -188,5 +210,9 @@ ul.category {
     ul.category img:last-child {
         order: -1;
     }
+}
+
+@media only screen and (min-width: 800px) {
+    
 }
 

@@ -1,8 +1,8 @@
 // preload background image
 let image = new Image();
-image.src = "images/dark_floor_texture.png";
+image.src = "images/doom_textures/dark_floor_texture.png";
 
-function setupDoorBell() {
+function doorBell() {
     let container = document.querySelector('.container');
     let doorBell = document.querySelector('button.door_bell');
     let door = document.querySelector('.door');
@@ -15,7 +15,20 @@ function setupDoorBell() {
     })
 };
 
-function setupLightSwitch() {
+function hamburgerMenu() {
+    let hamburger = document.querySelector('.burger');
+    let navLinks = document.querySelector('.nav_links');
+
+    hamburger.addEventListener('click', function () {
+        if (navLinks.classList.contains('collapsed')) {
+            navLinks.classList.remove('collapsed');
+        }   else {
+            navLinks.classList.add('collapsed');
+        }
+    });
+};
+
+function lightSwitch() {
     let lightSwitch = document.querySelector('.light_switch img');
     let body = document.body;
 
@@ -35,8 +48,9 @@ function setupLightSwitch() {
 };
 
 function initPageFunctions() {
-    setupDoorBell();
-    setupLightSwitch();
+    doorBell();
+    hamburgerMenu();
+    lightSwitch();    
 }
 
 initPageFunctions();
