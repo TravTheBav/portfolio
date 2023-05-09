@@ -213,6 +213,23 @@ ul.category {
 }
 
 @media only screen and (min-width: 800px) {
+    .burger {
+        display: none;
+    }
     
+    .nav_links, .nav_links.collapsed {
+        width: max-content;
+        position: inherit;
+        top: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: transparent;
+        gap: 10px;
+    }
+
+    .nav_links * {
+        margin: 0px;
+    }
 }
 
