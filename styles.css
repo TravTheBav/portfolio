@@ -139,15 +139,14 @@ h1.page_title {
     padding: 10px;
     display: flex;
     align-items: center;
-    box-shadow: 0px 6px 5px rgb(25, 25, 25);
 }
 
 .nav_bar {
     align-items: flex-start;
     gap: 8px;
-    background-color: rgba(0, 0, 0, 0.4);
     flex-direction: column;
     position: relative;
+    box-shadow: 0px 6px 5px rgb(25, 25, 25);
 }
 
 .nav_bar * {
@@ -161,6 +160,7 @@ h1.page_title {
 
 .nav_links * {
     margin: 1rem 0px 2rem 1rem;
+    text-decoration: none;
 }
 
 .nav_links {
@@ -168,11 +168,19 @@ h1.page_title {
     position: absolute;
     left: 0;
     top: 50px;
-    background-color: #004c70;
+    background-color: inherit;
 }
 
 .nav_links.collapsed {
     display: none;
+}
+
+.nav_bar.light {
+    background-color: rgba(112, 95, 44, 1);
+}
+
+.nav_bar.dark {
+    background-color: rgba(43, 51, 84, 1);
 }
 
 .page_middle {
@@ -203,7 +211,7 @@ ul.category {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    li.index_menu img.index_category:hover + img.skull_box {
+    li.index_menu a:hover + img.skull_box {
         opacity: 1;
     }
 
@@ -217,19 +225,16 @@ ul.category {
         display: none;
     }
     
-    .nav_links, .nav_links.collapsed {
-        width: max-content;
+    .nav_bar.light, .nav_bar.dark, .nav_links.collapsed {
         position: inherit;
         top: 0px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        background-color: transparent;
-        gap: 10px;
+        gap: 1.5rem;
     }
 
     .nav_links * {
-        margin: 0px;
+        margin: 0px 0px 0px 10px;
     }
 }
-

@@ -31,19 +31,19 @@ function hamburgerMenu() {
 function lightSwitch() {
     let lightSwitch = document.querySelector('.light_switch img');
     let body = document.body;
+    let navBar = document.querySelector('.nav_bar');
+    let affectedElements = [lightSwitch, body, navBar];
 
     lightSwitch.addEventListener('click', function () {
-        if (lightSwitch.classList.contains('light')) {
-            lightSwitch.classList.remove('light');
-            lightSwitch.classList.add('dark');
-            body.classList.remove('light');
-            body.classList.add('dark');
-        }   else {
-            lightSwitch.classList.remove('dark');
-            lightSwitch.classList.add('light');
-            body.classList.remove('dark');
-            body.classList.add('light');
-        }
+        affectedElements.forEach(function(element) {
+            if (element.classList.contains('light')) {
+                element.classList.remove('light');
+                element.classList.add('dark');
+            }   else {
+                element.classList.remove('dark');
+                element.classList.add('light');
+            }
+        });
     });
 };
 
