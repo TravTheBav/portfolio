@@ -24,9 +24,10 @@ function lightSwitch() {
 };
 
 function darkMode() {
+    lightButton = document.querySelector('.light_switch img');
     body = document.body;
     navBar = document.querySelector('.nav_bar');
-    affectedElements = [body, navBar];
+    affectedElements = [body, navBar, lightButton];
     affectedElements.forEach( element => {
         element.classList.add('dark');
         element.classList.remove('light');
@@ -35,9 +36,10 @@ function darkMode() {
 }
 
 function lightMode() {
+    lightButton = document.querySelector('.light_switch img');
     body = document.body;
     navBar = document.querySelector('.nav_bar');
-    affectedElements = [body, navBar];
+    affectedElements = [body, navBar, lightButton];
     affectedElements.forEach( element => {
         element.classList.add('light');
         element.classList.remove('dark');
