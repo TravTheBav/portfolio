@@ -184,7 +184,7 @@ h1.page_title {
 }
 
 .page_middle {
-    padding-top: clamp(30px, 5vh, 60px);
+    padding: clamp(30px, 5vh, 60px);
 }
 
 li.index_menu {
@@ -208,6 +208,18 @@ ul.category {
 .category img.skull_box {
     width: 3.2vw;
     opacity: 0;
+}
+
+.projects_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, min(650px, 45vw)));
+    justify-content: center;
+    gap: 80px;
+}
+
+.project_card {
+    background-color: red;
+    aspect-ratio: 1 / 1;
 }
 
 @media (hover: hover) and (pointer: fine) {
