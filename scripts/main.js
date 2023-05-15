@@ -12,36 +12,50 @@ function hamburgerMenu() {
 };
 
 function lightSwitch() {
-    lightButton = document.querySelector('.light_switch img');
+    let lightButton = document.querySelector('.light_switch img');
 
     lightButton.addEventListener('click', function () {
-        if (document.body.classList.contains('light')) {
-            darkMode();
-        }   else {
+        if (document.body.classList.contains('dark')) {
             lightMode();
+        }   else {
+            darkMode();
         }
     });
 };
 
 function darkMode() {
-    lightButton = document.querySelector('.light_switch img');
-    body = document.body;
-    navBar = document.querySelector('.nav_bar');
-    affectedElements = [body, navBar, lightButton];
+    let lightButton = document.querySelector('.light_switch img');
+    let body = document.body;
+    let navBar = document.querySelector('.nav_bar');
+    let projects = document.querySelector('.projects_wrapper');
+    let affectedElements = [body, navBar, lightButton];
+
+    if (projects) {
+        Array.from(projects.children).forEach( project_card => {
+            affectedElements.push(project_card);
+        })
+    }
+    
     affectedElements.forEach( element => {
         element.classList.add('dark');
-        element.classList.remove('light');
     });
     sessionStorage.setItem('mode', 'dark');
 }
 
 function lightMode() {
-    lightButton = document.querySelector('.light_switch img');
-    body = document.body;
-    navBar = document.querySelector('.nav_bar');
-    affectedElements = [body, navBar, lightButton];
+    let lightButton = document.querySelector('.light_switch img');
+    let body = document.body;
+    let navBar = document.querySelector('.nav_bar');
+    let projects = document.querySelector('.projects_wrapper');
+    let affectedElements = [body, navBar, lightButton];
+
+    if (projects) {
+        Array.from(projects.children).forEach( project_card => {
+            affectedElements.push(project_card);
+        })
+    }
+
     affectedElements.forEach( element => {
-        element.classList.add('light');
         element.classList.remove('dark');
     });
     sessionStorage.setItem('mode', 'light');
