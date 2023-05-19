@@ -252,6 +252,24 @@ ul.category {
     background-size: cover;
 }
 
+.project_card .links {
+    padding: 4px;
+    display: flex;
+}
+
+button.github {
+    background-image: url(images/svg_icons/github-mark.svg);
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    aspect-ratio: 1 / 1;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
 @media (hover: hover) and (pointer: fine) {
     li.index_menu a:hover + img.skull_box {
         opacity: 1;
@@ -263,6 +281,10 @@ ul.category {
 
     .project_card:hover {
         transform: scale(1.03);
+    }
+
+    button.github:hover {
+        filter: brightness(0.5) sepia(1) hue-rotate(90deg) saturate(5);
     }
 }
 

@@ -1,3 +1,12 @@
+function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+}
+
+function linkToGithub(event, url) {
+    event.stopPropagation();
+    window.open(url, '_blank').focus();
+}
+
 function hamburgerMenu() {
     let hamburger = document.querySelector('.burger');
     let navLinks = document.querySelector('.nav_links');
