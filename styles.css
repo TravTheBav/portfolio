@@ -127,13 +127,16 @@ img.lamp {
 
 .page_title {
     font-size: 6vh;
-    font-family: 'DooM_Regular';
     background-image: linear-gradient(#004c70, #d98c00);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-stroke: 2px white;
     text-align: center;
+}
+
+.page_title, button.door_bell {
+    font-family: 'DooM_Regular', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .page_title.sub {
