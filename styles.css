@@ -30,7 +30,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 1fr;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 
 .page_content {
@@ -102,13 +102,11 @@ button.door_bell {
 }
 
 img.lamp {
-    height: 15vh;
-    aspect-ratio: 1 / 2;
+    display: none;
 }
 
 .light_switch img {
     width: clamp(40px, 5vw, 160px);
-    height: auto;
 }
 
 .light_switch img {
@@ -120,13 +118,12 @@ img.lamp {
 }
 
 .header {
-    justify-content: space-between;
-    height: max-content;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 .page_title {
-    font-size: 6vh;
+    font-size: clamp(22px, 5.5vh, 100px);
     background-image: linear-gradient(#004c70, #d98c00);
     -webkit-background-clip: text;
     background-clip: text;
@@ -140,11 +137,11 @@ img.lamp {
 }
 
 .page_title.sub {
-    font-size: 5vh;
+    font-size: clamp(20px, 5vh, 80px);
 }
 
 .header, .nav_bar {
-    padding: 10px;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
 }
@@ -177,6 +174,8 @@ img.lamp {
     left: 0;
     top: 50px;
     background-color: inherit;
+    z-index: 2;
+    border-bottom: 2px solid black;
 }
 
 .nav_links * {
@@ -187,14 +186,10 @@ img.lamp {
     display: none;
 }
 
-.page_middle {
-    padding: clamp(30px, 5vh, 60px);
-}
-
 li.index_menu {
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: min(4vh, 60px);
     justify-content: center;
     align-items: center;
 }
@@ -206,7 +201,7 @@ ul.category {
 }
 
 .category img {
-    width: clamp(270px, 58vw, 1200px);
+    width: clamp(240px, 58vw, 1200px);
 }
 
 .category img.skull_box {
@@ -216,9 +211,10 @@ ul.category {
 
 .projects_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(284px, min(650px, 45vw)));
+    grid-template-columns: repeat(auto-fit, minmax(250px, min(650px, 45vw)));
     justify-content: center;
-    gap: 80px;
+    gap: 4.5vh;
+    padding-bottom: 100px;
 }
 
 .project_card {
@@ -240,7 +236,7 @@ ul.category {
 
 .project_card h3 {
     text-align: center;
-    font-size: 32px;
+    font-size: clamp(18px, 3vh, 32px);
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -292,6 +288,20 @@ button.github {
 }
 
 @media only screen and (min-width: 800px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header, .nav_bar {
+        padding: 10px;
+    }
+
+    img.lamp {
+        display: inline-block;
+        height: 15vh;
+        aspect-ratio: 1 / 2;
+    }
+
     .burger {
         display: none;
     }
@@ -303,6 +313,7 @@ button.github {
         justify-content: flex-start;
         align-items: center;
         gap: 1.5rem;
+        border: none;
     }
 
     .nav_links * {
