@@ -159,9 +159,10 @@ img.lamp {
     background-color: rgba(43, 51, 84, 1);
 }
 
-.nav_bar * {
-    font-size: 24px;
+.nav_bar *, .about_text p {
+    font-size: 28px;
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .burger {
@@ -269,6 +270,21 @@ button.github {
     cursor: pointer;
 }
 
+.about_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.about_photo {
+    max-width: 75vw;
+    aspect-ratio: 1 / 1.1;
+    background-image: url(images/personal_photos/me_and_kitty.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 @media (hover: hover) and (pointer: fine) {
     li.index_menu a:hover + img.skull_box {
         opacity: 1;
@@ -318,5 +334,14 @@ button.github {
 
     .nav_links * {
         margin: 0px 0px 0px 10px;
+    }
+
+    .about_content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .about_photo {
+        min-width: 719px;
     }
 }
