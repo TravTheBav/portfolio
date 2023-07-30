@@ -23,6 +23,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-top: 0;
+}
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -271,18 +275,18 @@ button.github {
 }
 
 .about_content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
 }
 
-.about_photo {
-    max-width: 75vw;
-    aspect-ratio: 1 / 1.1;
+img.about-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
     background-image: url(images/personal_photos/me_and_kitty.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -334,14 +338,5 @@ button.github {
 
     .nav_links * {
         margin: 0px 0px 0px 10px;
-    }
-
-    .about_content {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    
-    .about_photo {
-        min-width: 719px;
     }
 }
