@@ -169,6 +169,10 @@ img.lamp {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.nav_bar-icon {
+    width: 28px;
+}
+
 .burger {
     margin-left: 1rem;
 }
@@ -283,6 +287,7 @@ button.github {
 img.about-photo {
     width: 140px;
     height: 140px;
+    margin-bottom: 28px;
     border-radius: 50%;
     background-image: url(images/personal_photos/me_and_kitty.jpg);
     background-size: contain;
