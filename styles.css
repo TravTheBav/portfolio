@@ -21,12 +21,13 @@ body.dark {
 
 a {
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 p {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75;
 }
 
 .flex {
@@ -98,7 +99,6 @@ p {
 button.door_bell {
     background-color: rgb(192, 28, 28);
     color: white;
-    font-size: 24px;
     width: 240px;
     height: 100px;
     position: absolute;
@@ -133,12 +133,12 @@ img.lamp {
 }
 
 .page_title {
-    font-size: clamp(22px, 5.5vh, 100px);
+    font-size: 2.6rem;
     background-image: linear-gradient(#004c70, #d98c00);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 1px white;
     text-align: center;
 }
 
@@ -147,7 +147,7 @@ img.lamp {
 }
 
 .page_title.sub {
-    font-size: clamp(20px, 5vh, 80px);
+    font-size: 2.2rem;
 }
 
 .header, .nav_bar {
@@ -268,7 +268,7 @@ ul.category {
 
 .project_card h3 {
     text-align: center;
-    font-size: clamp(18px, 3vh, 32px);
+    font-size: 1.5rem;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -303,7 +303,7 @@ button.linked-in {
 .about_content {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 img.about-photo {
@@ -334,7 +334,11 @@ img.about-photo {
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 720px) {
+    .html {
+        font-size: 20px;
+    }
+
     .header {
         justify-content: space-between;
     }
@@ -359,11 +363,17 @@ img.about-photo {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
         border: none;
     }
 
     .nav_links * {
         margin: 6px 12px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    html {
+        font-size: 22px;
     }
 }
