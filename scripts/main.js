@@ -9,7 +9,7 @@ function linkToGithub(event, url) {
 
 function hamburgerMenu() {
     let hamburger = document.querySelector('.burger');
-    let navLinks = document.querySelector('.nav_links');
+    let navLinks = document.querySelector('.nav-links');
 
     hamburger.addEventListener('click', function () {
         if (navLinks.classList.contains('collapsed')) {
@@ -21,7 +21,7 @@ function hamburgerMenu() {
 };
 
 function lightSwitch() {
-    let lightButton = document.querySelector('.light_switch img');
+    let lightButton = document.querySelector('.page-theme-toggler img');
 
     lightButton.addEventListener('click', function () {
         if (document.body.classList.contains('dark')) {
@@ -33,10 +33,10 @@ function lightSwitch() {
 };
 
 function darkMode() {
-    let lightButton = document.querySelector('.light_switch img');
+    let lightButton = document.querySelector('.page-theme-toggler img');
     let body = document.body;
-    let navBar = document.querySelector('.nav_bar');
-    let projects = document.querySelector('.projects_wrapper');
+    let navBar = document.querySelector('.nav-bar');
+    let projects = document.querySelector('.projects-wrapper');
     let affectedElements = [body, navBar, lightButton];
 
     if (projects) {
@@ -52,10 +52,10 @@ function darkMode() {
 }
 
 function lightMode() {
-    let lightButton = document.querySelector('.light_switch img');
+    let lightButton = document.querySelector('.page-theme-toggler img');
     let body = document.body;
-    let navBar = document.querySelector('.nav_bar');
-    let projects = document.querySelector('.projects_wrapper');
+    let navBar = document.querySelector('.nav-bar');
+    let projects = document.querySelector('.projects-wrapper');
     let affectedElements = [body, navBar, lightButton];
 
     if (projects) {

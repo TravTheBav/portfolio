@@ -3,10 +3,10 @@ function doorBell() {
         return;
     }
 
-    let container = document.querySelector('.container');
-    let doorBell = document.querySelector('button.door_bell');
+    let container = document.querySelector('.landing-container');
+    let doorBell = document.querySelector('button.door-bell');
     let door = document.querySelector('.door');
-    let statusBar = document.querySelector('.status_bar');
+    let statusBar = document.querySelector('.status-bar');
     
     doorBell.addEventListener('click', function () {
         door.classList.add('open');

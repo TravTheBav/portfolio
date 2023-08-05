@@ -8,60 +8,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page_content">
-        <div class="page_top">
-            <div class="header">
-                <img src="images/doom_gifs/lamp.gif" alt="spectral_lamp" class="lamp">
-                <h1 class="page_title">Travis Zito</h1>
-                <img src="images/doom_gifs/lamp.gif" alt="spectral_lamp" class="lamp">
-            </div>
-            <div class="nav_bar">
+    <div class="page-content">
+        <div class="page-top">
+            <header class="site-wide-banner">
+                <img src="images/doom_gifs/lamp.gif" class="lamp">
+                <h1 class="page-title">Travis Zito</h1>
+                <img src="images/doom_gifs/lamp.gif" class="lamp">
+            </header>
+            <nav class="nav-bar">
                 <div class="burger">
                     <img src="images/svg_icons/menu.svg" alt="menu">
                 </div>
-                <div class="nav_links collapsed">
+                <div class="nav-links collapsed">
                     <div><a href="home.html">Home</a></div>
                     <div><a href="about.html">About</a></div>
                     <div class="flex"><button class="github clickable icon small-icon" onclick="openInNewTab('https://github.com/TravTheBav')"></button></div>
                     <div class="flex"><button class="linked-in clickable icon small-icon" onclick="openInNewTab('https://www.linkedin.com/in/travis-zito-24aa5a14a/')"></button></div>
                 </div>
-            </div>
-            <div class="light_switch">
-                <img src="images/doom_textures/switch_on.png" alt="light_switch">
+            </nav>
+            <div class="page-theme-toggler">
+                <img src="images/doom_textures/switch_on.png" alt="page-theme-toggler">
             </div>
         </div>
-        <h2 class="page_title sub">Web Templates</h2>
-        <div class="page_middle">
-            <div class="projects_wrapper">
-                <div class="project_card clickable" onclick="openInNewTab('https://travthebav.github.io/matzo-soup-recipe/')">
+        <main>
+            <h2 class="page-title sub">Web Templates</h2>
+            <div class="projects-wrapper">
+                <div class="project-card clickable" onclick="openInNewTab('https://travthebav.github.io/matzo-soup-recipe/')">
                     <h3>Matzo Ball Soup</h3>
                     <div class="photo" style="background-image: url('images/project_screenshots/matzo_screenshot.jpg')"></div>
                     <div class="links">
                         <button class="github clickable icon medium-icon" onclick="linkToGithub(event, 'https://github.com/TravTheBav/matzo-soup-recipe')"></button>
                     </div>
                 </div>
-                <div class="project_card clickable" onclick="openInNewTab('https://travthebav.github.io/landing_page/')">
+                <div class="project-card clickable" onclick="openInNewTab('https://travthebav.github.io/landing_page/')">
                     <h3>Landing Page</h3>
                     <div class="photo" style="background-image: url('images/project_screenshots/landing_page.jpg');"></div>
                     <div class="links">
                         <button class="github clickable icon medium-icon" onclick="linkToGithub(event, 'https://github.com/TravTheBav/landing_page')"></button>
                     </div>
                 </div>
-                <div class="project_card clickable" onclick="openInNewTab('https://travthebav.github.io/admin-dashboard/')">
+                <div class="project-card clickable" onclick="openInNewTab('https://travthebav.github.io/admin-dashboard/')">
                     <h3>Admin Dashboard</h3>
                     <div class="photo" style="background-image: url('images/project_screenshots/admin_dash.jpg')"></div>
                     <div class="links">
                         <button class="github clickable icon medium-icon" onclick="linkToGithub(event, 'https://github.com/TravTheBav/admin-dashboard')"></button>
                     </div>
                 </div>
-                <div class="project_card clickable" onclick="openInNewTab('https://travthebav.github.io/sign-up-form/')">
+                <div class="project-card clickable" onclick="openInNewTab('https://travthebav.github.io/sign-up-form/')">
                     <h3>Sign Up Form</h3>
                     <div class="photo" style="background-image: url('images/project_screenshots/sign_up_form.jpg');"></div>
                     <div class="links">
                         <button class="github clickable icon medium-icon" onclick="linkToGithub(event, 'https://github.com/TravTheBav/sign-up-form')"></button>
                     </div>
                 </div>
-                <div class="project_card clickable" onclick="openInNewTab('https://travthebav.github.io/Etch-a-Sketch/')">
+                <div class="project-card clickable" onclick="openInNewTab('https://travthebav.github.io/Etch-a-Sketch/')">
                     <h3>Etch-A-Sketch</h3>
                     <div class="photo" style="background-image: url('images/project_screenshots/etch_a_sketch.jpg'); background-position: center;"></div>
                     <div class="links">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
     <script src="scripts/main.js"></script>
 </body>
