@@ -13,6 +13,8 @@ html, body, .page_content {
 body {    
     position: relative;
     background: 120px/120px repeat url('images/doom_textures/floor_texture.png');
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body.dark {
@@ -101,6 +103,7 @@ p {
     color: white;
     width: 240px;
     height: 100px;
+    font-size: 1rem;
     position: absolute;
     top: calc(50% - 50px);
     left: calc(50% - 120px);
@@ -143,7 +146,7 @@ p {
 }
 
 .page_title, .door_bell {
-    font-family: 'DooM_Regular', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'DooM_Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .page_title.sub {
@@ -171,7 +174,6 @@ p {
 
 .nav_bar *, .about_text p {
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .icon {
@@ -233,7 +235,7 @@ ul.category {
 
 .projects_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, min(650px, 45vw)));
+    grid-template-columns: repeat(auto-fit, minmax(250px, min(500px, 40vw)));
     justify-content: center;
     gap: 4.5vh;
     padding-bottom: 100px;
@@ -244,7 +246,7 @@ ul.category {
     transform: scale(1);
     transition: transform 0.25s;
     display: grid;
-    grid-template-rows: 1.5fr 9fr 1fr;
+    grid-template-rows: max-content 1fr max-content;
     background-color: rgba(112, 95, 44, 1);
     box-shadow: 0px 6px 5px rgb(25, 25, 25);
     border-radius: 6px;
@@ -258,9 +260,7 @@ ul.category {
 
 .project_card h3 {
     text-align: center;
-    font-size: 1.5rem;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: .75rem 0px;
 }
 
 .project_card .photo {
@@ -296,8 +296,7 @@ ul.category {
 }
 
 .medium-icon {
-    margin: .2rem;
-    width: 2rem;
+    width: 1.75rem;
 }
 
 .about_content {
@@ -336,7 +335,7 @@ img.about-photo {
 
 @media only screen and (min-width: 720px) {
     .html {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .header {
@@ -374,6 +373,6 @@ img.about-photo {
 
 @media only screen and (min-width: 960px) {
     html {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
