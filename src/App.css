@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+  --dark: #200432;
+  --maroon: hsl(323, 83%, 16%);
+  --caliente: hsl(340, 82%, 26%);
+  --orangeRed: hsl(353, 77%, 45%);
+  --mustard: hsl(26, 99%, 60%);
+  --light: hsl(41, 97%, 85%);
+}
+
+html {
+  font-size: 8px;
+  color: var(--light);
+  font-family: 'Questrial', sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Asimovian', serif;
+  letter-spacing: 4px;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 3.4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+.large_text {
+  font-size: 1.6rem;
+}
+
+.xl_text {
+  font-size: 1.8rem;
+}
+
+.xxl_text {
+  font-size: 2.2rem;
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}

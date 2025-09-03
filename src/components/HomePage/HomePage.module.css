@@ -1,0 +1,106 @@
+section {
+    margin-bottom: 2rem;
+}
+
+i {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+}
+
+i * {
+    width: 100%;
+    height: auto;
+}
+
+.bg_img {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: min(500px, 50vw);
+    position: relative;
+}
+
+.img_1 {
+    background-image: url('../../assets/sunrise.svg');
+}
+
+.img_text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    background-color: var(--caliente);
+    padding: 1rem 0px;
+    width: 100%;
+    font-size: min(5rem, 8vw);
+}
+
+.geometric {
+    width: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 7rem 0px;
+}
+
+.circle_pattern {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/circles.svg');
+}
+
+.hex_pattern {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/hexagons.svg');
+}
+
+.portrait {
+    width: clamp(10rem, 30vw, 20rem);
+    border-radius: 50%;
+    border: .5rem solid var(--orangeRed);
+}
+
+.bio {
+    background-color: var(--dark);
+    width: 80%;
+    border-radius: 10px;
+    padding: 2rem;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.technologies p {
+    margin: 0px;
+}
+
+.tech_icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech_icons > div {
+    background-color: var(--orangeRed);
+    width: 12rem;
+    padding: .5rem 0px;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 480px) {
+    .flex {
+        flex-direction: row;
+    }
+
+    i {
+        width: 4.6rem;
+        height: 4.6rem;
+    }
+}
