@@ -1,5 +1,7 @@
 import styles from './HomePage.module.css'
 import portrait from '../../assets/portrait.jpg'
+import kitty from '../../assets/kitty.jpg'
+import brody from '../../assets/brody.jpg'
 import { DiPython } from "react-icons/di";
 import { DiGit } from "react-icons/di";
 import { DiGithubBadge } from "react-icons/di";
@@ -19,19 +21,17 @@ function HomePage() {
             <h1 className={`${styles.img_text}`}>Travis Zito</h1>
         </section>
         <section className={`${styles.geometric} ${styles.circle_pattern}`}>
-            <div className={`${styles.bio} ${styles.flex}`}>
-                <div>
-                    <p className={`large_text`}>
-                        Hello there, I'm Travis. I am a hobbyist coder, with a passion for
-                        web development and design. I recently graduated from Oregon State University
-                        with a Bachelors of Science in Comp Sci, and am looking to become a professional
-                        software developer. Aside from coding, I love reading about history, going for walks
-                        in nature, playing video games, and hanging out with my cats.
-                    </p>
-                </div>
+            <div className={`${styles.bio} flex justify_center align_center md_gap`}>
                 <div>
                     <img className={`${styles.portrait}`} src={portrait}/>
                 </div>
+                <p>
+                    Hello there, I'm Travis. I am a hobbyist coder, with a passion for
+                    web development and design. I recently graduated from Oregon State University
+                    with a Bachelors of Science in Comp Sci, and am looking to become a professional
+                    software developer. Aside from coding, I love reading about history, going for walks
+                    in nature, playing video games, and hanging out with my cats.
+                </p>
             </div>
         </section>
         <section className={`${styles.technologies}`}>
@@ -85,14 +85,29 @@ function HomePage() {
         </section>
         <section className={`${styles.geometric} ${styles.hex_pattern}`}>
             <div className={`${styles.bio}`}>
-                <h2>The Cats</h2>
-                <div className={`${styles.flex}`}>
-                    <div>test</div>
-                    <div>test</div>
+                <h2 className={`${styles.cat_banner}`}>The Cats</h2>
+                <div className={`flex justify_center align_center sm_gap ${styles.border_bottom}
+                 ${styles.cat_description}`}>
+                    <img className={`${styles.portrait}`} src={kitty} alt="" />
+                    <div>
+                        <h3><em>Kitty</em></h3>
+                        <ul>
+                            <li><b>Breed</b>: Nebelung</li>
+                            <li><b>Temperment</b>: reserved, loyal, loving</li>
+                            <li><b>Favorite food</b>: turkey coldcuts</li>
+                        </ul>
+                    </div>
                 </div>
-                <div className={`${styles.flex}`}>
-                    <div>test</div>
-                    <div>test</div>
+                <div className={`flex justify_center align_center sm_gap ${styles.cat_description}`}>
+                    <div>
+                        <h3><em>Brody</em></h3>
+                        <ul>
+                            <li><b>Breed</b>: Tabby</li>
+                            <li><b>Temperment</b>: astute, playful, trusting</li>
+                            <li><b>Favorite food</b>: salmon</li>
+                        </ul>
+                    </div>
+                    <img className={`${styles.portrait}`} src={brody} alt="" />
                 </div>
             </div>
         </section>

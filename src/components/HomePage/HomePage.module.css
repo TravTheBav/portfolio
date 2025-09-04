@@ -35,7 +35,6 @@ i * {
     background-color: var(--caliente);
     padding: 1rem 0px;
     width: 100%;
-    font-size: min(5rem, 8vw);
 }
 
 .geometric {
@@ -55,7 +54,7 @@ i * {
 }
 
 .portrait {
-    width: clamp(10rem, 30vw, 20rem);
+    width: clamp(8rem, 30vw, 20rem);
     border-radius: 50%;
     border: .5rem solid var(--orangeRed);
 }
@@ -66,14 +65,6 @@ i * {
     border-radius: 10px;
     padding: 2rem;
     color: white;
-}
-
-.flex {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
 }
 
 .technologies p {
@@ -94,11 +85,25 @@ i * {
     border-radius: 10px;
 }
 
-@media only screen and (min-width: 480px) {
-    .flex {
-        flex-direction: row;
-    }
+.border_bottom {
+    border-bottom: 2px solid var(--mustard);
+}
 
+.cat_banner {
+    background-color: var(--orangeRed);
+    border-radius: 5px;
+}
+
+.cat_description {
+    padding: 1rem 0px;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+@media only screen and (min-width: 480px) {
     i {
         width: 4.6rem;
         height: 4.6rem;
