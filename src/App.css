@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 :root {
-  --dark: #200432;
+  --dark: hsl(277, 85%, 11%);
   --maroon: hsl(323, 83%, 16%);
   --caliente: hsl(340, 82%, 26%);
+  --calienteAlpha: hsla(340, 82%, 26%, 0.9);
   --orangeRed: hsl(353, 77%, 45%);
   --mustard: hsl(26, 99%, 60%);
   --light: hsl(41, 97%, 85%);
@@ -89,6 +90,25 @@ ul {
 
 .md_gap {
   gap: 2rem;
+}
+
+.banner {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: min(500px, 50vw);
+  position: relative;
+}
+
+.banner_txt {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 1rem 0px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 480px) {

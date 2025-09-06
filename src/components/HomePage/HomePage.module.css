@@ -13,28 +13,12 @@ i * {
     height: auto;
 }
 
-.bg_img {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: min(500px, 50vw);
-    position: relative;
-}
-
-.img_1 {
+.banner_img {
     background-image: url('../../assets/sunrise.svg');
 }
 
-.img_text {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0px;
-    background-color: var(--caliente);
-    padding: 1rem 0px;
-    width: 100%;
+.banner_txt_dark {
+    background-color: var(--calienteAlpha);
 }
 
 .geometric {
@@ -64,7 +48,6 @@ i * {
     width: 80%;
     border-radius: 10px;
     padding: 2rem;
-    color: white;
 }
 
 .technologies p {

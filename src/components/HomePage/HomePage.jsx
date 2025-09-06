@@ -17,8 +17,8 @@ import { DiRuby } from "react-icons/di";
 function HomePage() {
     return (
         <>
-        <section className={`${styles.bg_img} ${styles.img_1}`}>
-            <h1 className={`${styles.img_text}`}>Travis Zito</h1>
+        <section className={`banner ${styles.banner_img}`}>
+            <h1 className={`banner_txt ${styles.banner_txt_dark}`}>Travis Zito</h1>
         </section>
         <section className={`${styles.geometric} ${styles.circle_pattern}`}>
             <div className={`${styles.bio} flex justify_center align_center md_gap`}>
