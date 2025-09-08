@@ -55,6 +55,12 @@ ul {
   padding: 0px;
 }
 
+button {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
 .large_text {
   font-size: 1.8rem;
 }

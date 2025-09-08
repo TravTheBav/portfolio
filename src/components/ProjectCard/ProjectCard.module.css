@@ -1,0 +1,21 @@
+.card {
+    min-height: 400px;
+    background-color: var(--light);
+    padding: 1rem;
+}
+
+.card > h2 {
+    margin: 0px 0px 1rem 0px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--dark);
+}
+
+.card > h2, .card > p {
+    color: var(--dark);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: .6rem;
+}

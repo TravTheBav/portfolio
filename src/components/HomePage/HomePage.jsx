@@ -1,7 +1,7 @@
 import styles from './HomePage.module.css'
-import portrait from '../../assets/portrait.jpg'
-import kitty from '../../assets/kitty.jpg'
-import brody from '../../assets/brody.jpg'
+import portrait from '../../assets/photos/portrait.jpg'
+import kitty from '../../assets/photos/kitty.jpg'
+import brody from '../../assets/photos/brody.jpg'
 import { DiPython } from "react-icons/di";
 import { DiGit } from "react-icons/di";
 import { DiGithubBadge } from "react-icons/di";
