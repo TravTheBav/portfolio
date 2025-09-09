@@ -3,12 +3,12 @@
 
 :root {
   --dark: hsl(277, 85%, 11%);
-  --maroon: hsl(323, 83%, 16%);
-  --caliente: hsl(340, 82%, 26%);
+  --maroon: #4b0731;
+  --caliente: #790c30;
   --calienteAlpha: hsla(340, 82%, 26%, 0.9);
   --orangeRed: hsl(353, 77%, 45%);
   --mustard: hsl(26, 99%, 60%);
-  --light: hsl(41, 97%, 85%);
+  --light: #fee6b4;
 }
 
 html {
