@@ -1,7 +1,7 @@
 .card {
-    min-height: 400px;
-    background-color: var(--light);
+    background: linear-gradient(315deg, var(--mustard), var(--light));
     padding: 1rem;
+    border-radius: .6rem;
 }
 
 .card > h2 {
@@ -17,5 +17,29 @@
 
 .card img {
     width: 100%;
-    border-radius: .6rem;
+    border: 2px solid var(--dark);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    justify-content: flex-end;
+}
+
+.github_link {
+    width: 3.5rem;
+    height: auto;
+    fill: var(--caliente);
+}
+
+.github_link:hover {
+    cursor: pointer;
+}
+
+.demo_link {
+    background-color: var(--caliente);
+    font-weight: 500;
+    font-size: small;
+    color: var(--light);
 }

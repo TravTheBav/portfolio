@@ -12,7 +12,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 8px;
   color: var(--light);
   font-family: 'Questrial', sans-serif;
   line-height: 1.5;
@@ -55,10 +55,18 @@ ul {
   padding: 0px;
 }
 
-button {
+button, .button_link {
   font-family: 'Questrial', sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  padding: .6rem 1rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 .large_text {
@@ -119,7 +127,7 @@ button {
 
 @media only screen and (min-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .flex {
@@ -129,18 +137,18 @@ button {
 
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
