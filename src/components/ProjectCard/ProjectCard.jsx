@@ -1,6 +1,5 @@
 import styles from './ProjectCard.module.css'
 import { DiGithubBadge } from "react-icons/di";
-import { Link } from 'react-router';
 
 function ProjectCard({
     title,

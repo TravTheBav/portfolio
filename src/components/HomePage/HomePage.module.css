@@ -21,33 +21,10 @@ i * {
     background-color: var(--calienteAlpha);
 }
 
-.geometric {
-    width: 100%;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    padding: 7rem 0px;
-}
-
-.circle_pattern {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/svg_art/circles.svg');
-}
-
-.hex_pattern {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/svg_art/hexagons.svg');
-}
-
 .portrait {
-    width: clamp(8rem, 30vw, 20rem);
+    width: clamp(8rem, 30vw, 18rem);
     border-radius: 50%;
     border: .5rem solid var(--orangeRed);
-}
-
-.bio {
-    background-color: var(--dark);
-    width: 80%;
-    border-radius: 10px;
-    padding: 2rem;
 }
 
 .technologies p {

@@ -20,8 +20,8 @@ function HomePage() {
         <section className={`banner ${styles.banner_img}`}>
             <h1 className={`banner_txt ${styles.banner_txt_dark}`}>Travis Zito</h1>
         </section>
-        <section className={`${styles.geometric} ${styles.circle_pattern}`}>
-            <div className={`${styles.bio} flex justify_center align_center md_gap`}>
+        <section className={`geometric circle_pattern`}>
+            <div className={`content_box dark_bg flex justify_center align_center md_gap`}>
                 <div>
                     <img className={`${styles.portrait}`} src={portrait}/>
                 </div>
@@ -83,12 +83,12 @@ function HomePage() {
                 </div>
             </div>
         </section>
-        <section className={`${styles.geometric} ${styles.hex_pattern}`}>
-            <div className={`${styles.bio}`}>
+        <section className={`geometric hex_pattern`}>
+            <div className={`content_box dark_bg`}>
                 <h2 className={`${styles.cat_banner}`}>The Cats</h2>
                 <div className={`flex justify_center align_center sm_gap ${styles.border_bottom}
                  ${styles.cat_description}`}>
-                    <img className={`${styles.portrait}`} src={kitty} alt="" />
+                    <img className={`${styles.portrait}`} src={kitty} alt="A grey cat named Kitty" />
                     <div>
                         <h3><em>Kitty</em></h3>
                         <ul>
@@ -107,7 +107,7 @@ function HomePage() {
                             <li><b>Favorite food</b>: salmon</li>
                         </ul>
                     </div>
-                    <img className={`${styles.portrait}`} src={brody} alt="" />
+                    <img className={`${styles.portrait}`} src={brody} alt="A grey white cat name Brody" />
                 </div>
             </div>
         </section>
