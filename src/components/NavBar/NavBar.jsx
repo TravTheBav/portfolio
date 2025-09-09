@@ -5,7 +5,7 @@ function NavBar() {
     const navigate = useNavigate()
 
     return (
-        <nav>
+        <nav className={`${styles.nav}`}>
             <button onClick={() => { navigate('/') }}>Home</button>
             <button onClick={() => { navigate('/projects') }}>Projects</button>
             <button onClick={() => { navigate('/contact') }}>Contact</button>

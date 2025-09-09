@@ -1,4 +1,4 @@
-nav {
+.nav {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
@@ -10,7 +10,7 @@ nav {
     background: linear-gradient(45deg, var(--caliente), var(--dark));
 }
 
-button {
+.nav button {
     background-color: var(--mustard);
     color: var(--dark);
 }
