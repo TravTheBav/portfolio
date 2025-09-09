@@ -75,6 +75,7 @@ function ProjectsPage() {
                             description={'Freecell solitaire variant made with PyGame.'}
                             imgName={'freecell.png'}
                             imgAltTxt={'Screenshot of Freecell solitaire, made with Python and PyGame.'}
+                            gitHubLink={'https://github.com/TravTheBav/freecell'}
                         />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -83,6 +84,8 @@ function ProjectsPage() {
                             description={'A light-weight task management app.'}
                             imgName={'todo.png'}
                             imgAltTxt={'Screenshot of the To Do app.'}
+                            gitHubLink={'https://github.com/TravTheBav/to-do-app'}
+                            demoLink={'https://travthebav.github.io/to-do-app/'}
                         />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -91,6 +94,8 @@ function ProjectsPage() {
                             description={'An Etch-a-Sketch made with HTML, CSS, and JavaScript.'}
                             imgName={'etch_a_sketch.png'}
                             imgAltTxt={'Screenshot of the Etch-a-Sketch app.'}
+                            gitHubLink={'https://github.com/TravTheBav/Etch-a-Sketch'}
+                            demoLink={'https://travthebav.github.io/Etch-a-Sketch/'}
                         />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -99,6 +104,8 @@ function ProjectsPage() {
                             description={'Add numbers. Do multiplication. Save the world.'}
                             imgName={'calculator.png'}
                             imgAltTxt={'Screenshot of a calculator made with JavaScript.'}
+                            gitHubLink={'https://github.com/TravTheBav/calculator'}
+                            demoLink={'https://travthebav.github.io/calculator/'}
                         />
                     </SwiperSlide>
                 </Swiper>

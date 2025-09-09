@@ -35,6 +35,7 @@
 
 .github_link:hover {
     cursor: pointer;
+    filter: brightness(130%);
 }
 
 .demo_link {

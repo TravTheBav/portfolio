@@ -65,6 +65,10 @@ button, .button_link {
   cursor: pointer;
 }
 
+button:hover, .button_link:hover {
+  filter: brightness(130%);
+}
+
 a {
   text-decoration: none;
 }

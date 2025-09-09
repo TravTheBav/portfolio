@@ -14,7 +14,3 @@ button {
     background-color: var(--mustard);
     color: var(--dark);
 }
-
-button:hover {
-    filter: brightness(130%);
-}
