@@ -12,7 +12,7 @@ function ContactPage() {
             <div className={'content_box maroon_bg'}>
                 <h2 className='xxl_text'>Let's build something great together</h2>
                 <p className='large_text'>
-                    I would love to chat with you, whether it is a project concept, or just to say hi! Feel free to
+                    I would love to hear from you, whether it be a project concept or any other inquiries. Feel free to
                     email me at <strong>tzito93@gmail.com</strong>.
                 </p>
             </div>

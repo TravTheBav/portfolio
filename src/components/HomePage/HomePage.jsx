@@ -26,11 +26,10 @@ function HomePage() {
                     <img className={`${styles.portrait}`} src={portrait}/>
                 </div>
                 <p>
-                    Hello there, I'm Travis. I am a hobbyist coder, with a passion for
+                    Hello there, I'm Travis. I am a coder, with a passion for
                     web development and design. I recently graduated from Oregon State University
                     with a Bachelors of Science in Comp Sci, and am looking to become a professional
-                    software developer. Aside from coding, I love reading about history, going for walks
-                    in nature, playing video games, and hanging out with my cats.
+                    software developer. In my free time, I like to golf, work out, and play video/board games.
                 </p>
             </div>
         </section>

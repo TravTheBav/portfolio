@@ -3,8 +3,8 @@ section {
 }
 
 i {
-    width: 3rem;
-    height: 3rem;
+    width: 2.2rem;
+    height: 2.2rem;
     display: inline-block;
 }
 
@@ -22,7 +22,7 @@ i * {
 }
 
 .portrait {
-    width: clamp(8rem, 30vw, 18rem);
+    width: clamp(6rem, 20vw, 15rem);
     border-radius: 50%;
     border: .5rem solid var(--orangeRed);
 }
@@ -40,8 +40,8 @@ i * {
 
 .tech_icons > div {
     background-color: var(--orangeRed);
-    width: 12rem;
-    padding: .5rem 0px;
+    width: 7rem;
+    padding-top: .5rem;
     border-radius: 10px;
 }
 
@@ -52,6 +52,7 @@ i * {
 .cat_banner {
     background-color: var(--orangeRed);
     border-radius: 5px;
+    padding: .4rem;
 }
 
 .cat_description {
