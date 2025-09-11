@@ -82,7 +82,8 @@ function HomePage() {
                 </div>
             </div>
         </section>
-        <section className={`geometric hex_pattern`}>
+        {/**
+         * <section className={`geometric hex_pattern`}>
             <div className={`content_box dark_bg`}>
                 <h2 className={`${styles.cat_banner}`}>The Cats</h2>
                 <div className={`flex justify_center align_center sm_gap ${styles.border_bottom}
@@ -110,6 +111,8 @@ function HomePage() {
                 </div>
             </div>
         </section>
+         * 
+         */}
         </>
     )
 }
