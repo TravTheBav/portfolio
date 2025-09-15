@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: var(--dark);
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -134,6 +135,17 @@ a {
   padding: 1rem;
 }
 
+.burger {
+  position: fixed;
+  display: block;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: white;
+}
+
 @media only screen and (min-width: 480px) {
   html {
     font-size: 17px;
@@ -156,6 +168,10 @@ a {
 
   .md_gap {
     gap: 2rem;
+  }
+
+  .burger {
+    display: none;
   }
 }
 

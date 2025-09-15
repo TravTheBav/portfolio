@@ -24,7 +24,7 @@ i * {
 .portrait {
     width: clamp(6rem, 20vw, 15rem);
     border-radius: 50%;
-    border: .5rem solid var(--orangeRed);
+    border: .2rem solid var(--orangeRed);
 }
 
 .technologies p {

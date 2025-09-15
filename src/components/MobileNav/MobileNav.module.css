@@ -1,0 +1,13 @@
+.mobile_nav {
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    background-color: var(--caliente);
+    border-bottom: 2px solid black;
+}
+
+.mobile_nav a {
+    color: var(--light);
+    display: block;
+    margin: .8rem;
+}

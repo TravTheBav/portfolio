@@ -1,16 +1,22 @@
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    flex-flow: wrap;
-    padding: .5rem;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    background: linear-gradient(45deg, var(--caliente), var(--dark));
+    display: none;
 }
 
-.nav button {
-    background-color: var(--mustard);
-    color: var(--dark);
+@media only screen and (min-width: 480px) {
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        flex-flow: wrap;
+        padding: .5rem;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        background: linear-gradient(45deg, var(--caliente), var(--dark));
+    }
+
+    .nav button {
+        background-color: var(--mustard);
+        color: var(--dark);
+    }
 }
