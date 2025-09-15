@@ -7,6 +7,7 @@ import ProjectsPage from './components/ProjectsPage/ProjectsPage'
 import ContactPage from './components/ContactPage/ContactPage'
 import MobileNav from './components/MobileNav/MobileNav'
 import MyBurger from './components/MyBurger/MyBurger'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <MyBurger burgerActive={burgerActive} setBurgerActive={setBurgerActive}/>
       <MobileNav burgerActive={burgerActive} setBurgerActive={setBurgerActive}/>
       <NavBar />
