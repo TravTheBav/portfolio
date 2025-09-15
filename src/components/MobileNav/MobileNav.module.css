@@ -1,5 +1,5 @@
 .mobile_nav {
-    position: absolute;
+    position: fixed;
     z-index: 99;
     width: 100vw;
     background-color: var(--caliente);
